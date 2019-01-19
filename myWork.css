@@ -13,11 +13,10 @@ body {
 #Top-nav {
   background: #1e2933;
   width: 100%;
-  height: 2.4em; }
+  height: 2.6em; }
   #Top-nav ul {
-    list-style-type: none;
     overflow: hidden;
-    width: 80%;
+    width: 85%;
     margin: auto;
     border-bottom: 1px solid #1f3b47; }
     #Top-nav ul li {
@@ -26,29 +25,102 @@ body {
       float: left;
       border-left: 1px solid #273643;
       border-right: 1px solid #11171d;
-      overflow: hidden; }
+      overflow: hidden;
+      list-style-image: url("music/static/music/image/arrow.png"); }
       #Top-nav ul li a {
         text-decoration: none;
         color: #63a57f;
         display: block;
         text-align: center;
-        padding: .76em 1em;
+        padding: .8em 1em;
         font-size: .8em; }
       #Top-nav ul li a:hover {
         color: #fff;
         background-image: linear-gradient(#0e100e, rgba(3, 3, 10, 0)); }
     #Top-nav ul #Python {
       border-top: 4px solid #3776ab; }
+      #Top-nav ul #Python a:hover:before {
+        content: '';
+        position: absolute;
+        border-color: #3776ab transparent transparent transparent;
+        border-style: solid;
+        border-width: 0.7em;
+        height: 0;
+        top: 20px;
+        left: 50px;
+        margin-top: -1.2em;
+        margin-left: 10.6em;
+        width: 0; }
     #Top-nav ul #PSF {
       border-top: 4px solid #78797a; }
+      #Top-nav ul #PSF a:hover:before {
+        content: '';
+        position: absolute;
+        border-color: #78797a transparent transparent transparent;
+        border-style: solid;
+        border-width: 0.7em;
+        height: 0;
+        top: 20px;
+        left: 50px;
+        margin-top: -1.2em;
+        margin-left: 24.8em;
+        width: 0; }
     #Top-nav ul #Docs {
       border-top: 4px solid #ffd343; }
+      #Top-nav ul #Docs a:hover:before {
+        content: '';
+        position: absolute;
+        border-color: #ffd343 transparent transparent transparent;
+        border-style: solid;
+        border-width: 0.7em;
+        height: 0;
+        top: 20px;
+        left: 50px;
+        margin-top: -1.2em;
+        margin-left: 39.0em;
+        width: 0; }
     #Top-nav ul #PyPl {
       border-top: 4px solid #82b043; }
+      #Top-nav ul #PyPl a:hover:before {
+        content: '';
+        position: absolute;
+        border-color: #82b043 transparent transparent transparent;
+        border-style: solid;
+        border-width: 0.7em;
+        height: 0;
+        top: 20px;
+        left: 50px;
+        margin-top: -1.2em;
+        margin-left: 53.2em;
+        width: 0; }
     #Top-nav ul #Jobs {
       border-top: 4px solid #a06ba7; }
+      #Top-nav ul #Jobs a:hover:before {
+        content: '';
+        position: absolute;
+        border-color: #a06ba7 transparent transparent transparent;
+        border-style: solid;
+        border-width: 0.7em;
+        height: 0;
+        top: 20px;
+        left: 50px;
+        margin-top: -1.2em;
+        margin-left: 67.4em;
+        width: 0; }
     #Top-nav ul #Community {
       border-top: 4px solid #b55863; }
+      #Top-nav ul #Community a:hover:before {
+        content: '';
+        position: absolute;
+        border-color: #b55863 transparent transparent transparent;
+        border-style: solid;
+        border-width: 0.7em;
+        height: 0;
+        top: 20px;
+        left: 50px;
+        margin-top: -1.2em;
+        margin-left: 81.6em;
+        width: 0; }
 
 /*-----TOP Navbar end's----*/
 
