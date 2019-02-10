@@ -9,16 +9,22 @@
 /*---BODY---*/
 
 body{
-    font: normal 1.2em Georgia,serif;
+    font: normal 1.2em SourceSansProRegular,Arial,sans-serif;
 }
+
 
 /*-----TOP Navbar start's----*/
 
-
 @import "Topnav";
-
 
 /*-----TOP Navbar end's----*/
 
+
+
+/*-----Header start'd here-----*/
+
+@import "Banner";
+
+/*------Header end's here----*/
 
 

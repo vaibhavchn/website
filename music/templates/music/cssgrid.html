@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vaibhav</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .container li:nth-child(odd){
+                background: #50f42c;
+        }
+        .container li:nth-child(even){
+                background: #3228f4;
+        }
+
+        .container ul{
+            width: 100%;
+            list-style-type: none;
+            display: inline-grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: 2em 1em 1.5em;
+            grid-gap: 1px;
+        }
+
+        .container li{
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ul>
+    </div>
+
+</body>
+</html>
