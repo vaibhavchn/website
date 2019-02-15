@@ -10,8 +10,8 @@
 
 body{
     font: normal 1.2em SourceSansProRegular,Arial,sans-serif;
-}
 
+}
 
 /*-----TOP Navbar start's----*/
 
@@ -20,11 +20,16 @@ body{
 /*-----TOP Navbar end's----*/
 
 
-
 /*-----Header start'd here-----*/
 
 @import "Banner";
 
 /*------Header end's here----*/
 
+
+/*------Main navigation bar start's here-----*/
+
+@import "Nav";
+
+/*-------Main navigation bar end's here------*/
 

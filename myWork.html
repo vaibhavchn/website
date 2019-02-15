@@ -27,41 +27,177 @@
 <!--Main-header///Banner start's--------------->
 
     <div class="header">
-        <div class="banner">
+        <div class="container">
+            <div class="banner">
+                <a href="/">
+                    <img class="python-logo" src="https://www.python.org/static/img/python-logo@2x.png" alt="Python logo"/>
+                </a>
 
-        <a href="/">
-            <img class="python-logo" src="https://www.python.org/static/img/python-logo@2x.png" alt="Python logo"/>
-        </a>
+                <div class="header_search">
 
-        <div class="header_search">
+                    <a href="#" class="Donate" tabindex="0">Donate</a>
 
-            <a href="#" class="Donate" tabindex="0">Donate</a>
-
-            <div class="search">
-                <form class="search_head">
-                    <div style="display: inline-block;"><img class="image" src="search.JPG" alt="Search image"/></div>
-                    <input id="search-field" name="search_it" type="search" placeholder="Search">
-                    <button id="submit" type="submit" name="submit" class="search_button" tabindex="1">GO</button>
-                </form><div class="social">
-                    <ul class="social_ul">
-                        <li class="dropdown_list"><a href="#" class="Socialize_content">Socialize</a>
-                            <ul class="media">
-                                <li class="social_li google"><a class="google" href="#"><span class="icon-google try_icons"></span>Google+</a></li>
-                                <li class="social_li face"><a href="#"><span class="icon-face try_icons"></span>Facebook</a></li>
-                                <li class="social_li twitter"><a href="#"><span class="icon-twitter try_icons"></span>Twitter</a></li>
-                                <li class="social_li chat"><a href="#"><span class="icon-chat try_icons"></span>Chat on IRC</a></li>
+                    <div class="search">
+                        <form class="search_head">
+                            <div style="display: inline-block;"><img class="image" src="search.JPG" alt="Search image"/></div>
+                            <input id="search-field" name="search_it" type="search" placeholder="Search">
+                            <button id="submit" type="submit" name="submit" class="search_button" tabindex="1">GO</button>
+                        </form><div class="social">
+                            <ul class="social_ul">
+                                <li class="dropdown_list"><a href="#" class="Socialize_content">Socialize</a>
+                                    <ul class="media">
+                                        <li class="social_li google"><a class="google" href="#"><span class="icon-google try_icons"></span>Google+</a></li>
+                                        <li class="social_li face"><a href="#"><span class="icon-face try_icons"></span>Facebook</a></li>
+                                        <li class="social_li twitter"><a href="#"><span class="icon-twitter try_icons"></span>Twitter</a></li>
+                                        <li class="social_li chat"><a href="#"><span class="icon-chat try_icons"></span>Chat on IRC</a></li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+<!--Main-header///Banner end's--->
+
+
+
+<!--Navigation bar start's-->
+
+            <div class="nav">
+                <ul class="nav_ul">
+                    <li class="nav_li About"><a href="#">About</a>
+                        <ul class="nav_dropdown about">
+                            <li class="x"><a href="#">Application</a></li>
+                            <li class="x"><a href="#">Quotes</a></li>
+                            <li class="x"><a href="#">Getting Started</a></li>
+                            <li class="x"><a href="#">Help</a></li>
+                            <li class="x"><a href="#">Python Brochure</a></li>
+                            <li class="x_about">
+                                <h4>Python is a programming language that lets you
+                                work more quickly and integrate your systems
+                                more effectively.</h4>
+                                <p>You can learn to use Python and see almost immediate
+                                    gains in productivity and lower maintenance costs.
+                                </p>
+                                <a href="#">Learn more about Python.>></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_li Downloads"><a href="#">Downloads</a>
+                        <ul class="nav_dropdown downloads">
+                            <li class="x"><a href="#">All release</a></li>
+                            <li class="x"><a href="#">Source code</a></li>
+                            <li class="x"><a href="#">Windows</a></li>
+                            <li class="x"><a href="#">Mac OS X</a></li>
+                            <li class="x"><a href="#">Other Platforms</a></li>
+                            <li class="x"><a href="#">License</a></li>
+                            <li class="x"><a href="#">Alternatives</a></li>
+                            <li class="x_downloads">
+                                <h4>Download for Windows</h4>
+									<a href="#" class="first_a">
+										Python 3.7.2
+									</a>
+                                    <p class="alone">Note that Python 3.5+ <em>cannot</em> be used on Windows
+                                        XP or earlier.
+                                    </p>
+									<p class="third">
+									Not the OS you are looking for?
+									Python can be used on many operating systems and environments.
+                                        <a href="#" class="second_a">View the full list of downloads.>></a>
+									</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_li Documentation"><a href="#">Documentation</a>
+                        <ul class="nav_dropdown documentation">
+                            <li class="x"><a href="#">Docs</a></li>
+                            <li class="x"><a href="#">Audio/Visual Talks</a></li>
+                            <li class="x"><a href="#">Beginner's Guid</a></li>
+                            <li class="x"><a href="#">Developer's Guid</a></li>
+                            <li class="x"><a href="#">FAQ</a></li>
+                            <li class="x"><a href="#">Non-English Docs</a></li>
+                            <li class="x"><a href="#">PEP Index</a></li>
+                            <li class="x_documentation">
+                                <h4>Python’s standard documentation: download,
+                                    browse or watch a tutorial.</h4>
+								<p class="firstp">Get started below, or visit the <a href="#">Documentation page to browse by version >></a></p>
+								<p class="secondp">
+								<a style="background-color:#ffd343" href="#">Python 3.x Docs</a><a href="#">Python 2.x Docs</a></p>
+                            </li>
+                            <!--<li class="x"><a href="#"></a></li>
+                            <li class="x"><a href="#"></a></li>-->
+                        </ul>
+                    </li>
+                    <li class="nav_li Community"><a href="#">Community</a>
+                        <ul class="nav_dropdown community">
+                            <li class="x"><a href="#">Community Survey</a></li>
+                            <li class="x"><a href="#">Diversity</a></li>
+                            <li class="x"><a href="#">Mailing List</a></li>
+                            <li class="x"><a href="#">IRC</a></li>
+                            <li class="x"><a href="#">Forums</a></li>
+                            <li class="x"><a href="#">Conferences</a></li>
+                            <li class="x_community">
+                                <h4>The Python Community</h4>
+								<p>Great software is supported by great people.
+                                    Our user base is enthusiastic, dedicated to
+                                    encouraging use of the language, and committed
+                                    to being diverse and friendly.</p>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_li Success_Stories"><a href="#">Success Stories</a>
+                        <ul class="nav_dropdown success_Stories">
+                            <li class="x"><a href="#">Arts</a></li>
+                            <li class="x"><a href="#">Business</a></li>
+                            <li class="x"><a href="#">Education</a></li>
+                            <li class="x"><a href="#">Engineering</a></li>
+                            <li class="x"><a href="#">Government</a></li>
+                            <li class="x"><a href="#">Scientific</a></li>
+                            <li class="x"><a href="#">Software Development</a></li>
+                            <li class="x_success_stories">
+                                <blockquote>
+								How we used Python to automate a problem that occurred infrequently, but was a huge nuisance when it did occur.
+								</blockquote>
+								<p><cite>Nat Dunn</cite>,<a>Webucator</a></p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_li News"><a href="#">News</a>
+                        <ul class="nav_dropdown news">
+                            <li class="x"><a href="#">Python News</a></li>
+                            <li class="x"><a href="#">Community News</a></li>
+                            <li class="x"><a href="#">PSF News</a></li>
+                            <li class="x"><a href="#">PyCon News</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_li Events"><a href="#">Events</a>
+                        <ul class="nav_dropdown events">
+                            <li class="x"><a href="#">Python Events</a></li>
+                            <li class="x"><a href="#">User Group Events</a></li>
+                            <li class="x"><a href="#">Python Events Archive</a></li>
+                            <li class="x"><a href="#">User Group Events Archive</a></li>
+                            <li class="x"><a href="#">Submit an Event</a></li>
+                           <!--<li class="x">
+                               <a>Find events from the Python Community around the world</a>
+                           </li>-->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+<!--Navigation bar end's here-->
+
+
+
+<!--Code Block start's here-->
+
+
+
+<!--Code Block end's here-->
         </div>
     </div>
-</div>
 
-<div class="">
-
-</div>
 
 </body>
 </html>
