@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="myWork.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <script type="text/javascript" src="myScript.js"></script>
 </head>
 <body>
 
@@ -195,7 +198,7 @@
             <div class="code">
                 <div class="code__event">
                     <ul class="code__event__ul">
-                        <li class="code__event__ul__li">
+                        <li id="code__event__ul__li__1">
                             <div class="first__div">
                                         <p class="comment">
                                             # Python 3: Fibonacci series up to n
@@ -210,8 +213,8 @@
                                         <p class="output">0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987</p>
                             </div>
                             <div class="second__div">
-                                <h1>Functions Defined</h1>
-                                <p>
+                                <h1 class="second__div__h1">Functions Defined</h1>
+                                <p class="second__div__p">
                                     The core of extensible programming is defining
                                     functions. Python allows mandatory and
                                     optional arguments, keyword arguments, and
@@ -220,11 +223,104 @@
                                 </p>
                             </div>
                         </li>
-                        <!--<li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>-->
+                        <li id="code__event__ul__li__2">
+                            <div class="first__div">
+                                        <p class="comment">
+                                            # Python 3: List comprehensions
+                                        </p>
+                                        &gt;&gt;&gt; fruits = ['Banana', 'Apple', 'Lime']</br>
+                                        &gt;&gt;&gt; loud_fruits = [fruit.upper() for fruit in fruits]</br>
+                                        &gt;&gt;&gt; print(loud_fruits)</p>
+                                        <p class="output">['BANANA', 'APPLE', 'LIME']</p>
+                                        <p class="comment__2">
+                                            # List and the enumerate function
+                                        </p>
+                                        &gt;&gt;&gt; list(enumerate(fruits))
+                                        <p class="output__2">[(0, 'Banana'), (1, 'Apple'), (2, 'Lime')]</p>
+                            </div>
+                            <div class="second__div">
+                                <h1 class="second__div__h1">Compound Data Types</h1>
+                                <p class="second__div__p">
+                                    Lists (known as arrays in other languages) are one of the compound data types that Python understands. Lists can be indexed, sliced and manipulated with other built-in functions. <a href="//docs.python.org/3/tutorial/introduction.html#lists">More about lists in Python&nbsp;3</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li id="code__event__ul__li__3">
+                            <div class="first__div">
+                                        <p class="comment">
+                                            # Python 3: Simple arithmetic
+                                        </p>
+                                        &gt;&gt;&gt; 1 / 2
+                                        <p class="output">0.5</p>
+                                        &gt;&gt;&gt; 2 ** 3
+                                        <p class="output">8</p>
+                                        &gt;&gt;&gt; 17 / 3<!--<p class="comment"># Python 3: Simple arithmetic</p>-->
+                                        <p class="output">5.6666666667</p>
+                                        &gt;&gt;&gt; 17 // 3<!--<p class="comment"># Python 3: Simple arithmetic</p>-->
+                                        <p class="output">5</p>
+                            </div>
+                            <div class="second__div">
+                                <h1 class="second__div__h1">Intuitive Interpretation</h1>
+                                <p class="second__div__p">
+                                    Calculations are simple with Python, and expression syntax is straightforward: the operators <code>+</code>, <code>-</code>, <code>*</code> and <code>/</code> work as expected; parentheses <code>()</code> can be used for grouping. <a href="http://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator">More about simple math functions in Python&nbsp;3</a>.
+                                </p>
+                            </div>
+                        </li>
+                        <li id="code__event__ul__li__4">
+                            <div class="first__div">
+                                        <p class="comment__4">
+                                            # Python 3: Simple output (with Unicode)
+                                        </p>
+                                        &gt;&gt;&gt; print("Hello, I'm Python!")
+                                        <p class="output">Hello, I'm Python!</p>
+                                        <p class="comment__4_1">
+                                           # Input, assignment
+                                        </p>
+                                        &gt;&gt;&gt; name = input('What is your name?\n')</br>
+                                        &gt;&gt;&gt; print('Hi, %s.' % name)
+                                        <p class="output">What is your name?</br>
+                                        Python</br>
+                                        Hi, Python.</p>
+                                        <!--<p class="output">0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987</p>
+                                        <p class="output">0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987</p>-->
+                            </div>
+                            <div class="second__div">
+                                <h1 class="second__div__h1">Quick &amp; Easy to Learn</h1>
+                                <p class="second__div__p">
+                                    Experienced programmers in any other language can pick up Python very quickly, and beginners find the clean syntax and indentation structure easy to learn. <a href="//docs.python.org/3/tutorial/">Whet your appetite</a> with our Python&nbsp;3 overview.
+                                </p>
+                            </div>
+                        </li>
+                        <li id="code__event__ul__li__5">
+                            <div class="first__div">
+                                        <p class="comment">
+                                            # For loop on a list
+                                        </p>
+                                        &gt;&gt;&gt; numbers = [2, 4, 6, 8]</br>
+                                        &gt;&gt;&gt; product = 1</br>
+                                        &gt;&gt;&gt; for number in numbers:</br>
+                                        ...    product = product * number</br>
+                                        ...</br>
+                                        &gt;&gt;&gt; print('The product is:', product)
+                                        <p class="output__5">The product is: 384</p>
+                            </div>
+                            <div class="second__div">
+                                <h1 class="second__div__h1">All the Flow You’d Expect</h1>
+                                <p class="second__div__p">
+                                    Python knows the usual control flow statements that other languages speak — <code>if</code>, <code>for</code>, <code>while</code> and <code>range</code> — with some of its own twists, of course. <a href="//docs.python.org/3/tutorial/controlflow.html">More control flow tools in Python&nbsp;3</a>
+                                </p>
+                            </div>
+                        </li>
+
                     </ul>
+                    <ul class="ol__btn">
+                        <li class="ol__li"><a href="#" onclick="changeCode(this.id);" id="1">1</a></li>
+                        <li class="ol__li"><a href="#" onclick="changeCode(this.id);" id="2">2</a></li>
+                        <li class="ol__li"><a href="#" onclick="changeCode(this.id);" id="3">3</a></li>
+                        <li class="ol__li"><a href="#" onclick="changeCode(this.id);" id="4">4</a></li>
+                        <li class="ol__li"><a href="#" onclick="changeCode(this.id);" id="5">5</a></li>
+                    </ul>
+                    <a href="#" class="launch">>_</a>
                 </div>
             </div>
 
