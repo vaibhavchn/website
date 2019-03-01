@@ -13,6 +13,12 @@ body{
 
 }
 
+.active{
+    opacity: 1;
+    color: #e6e8ea;
+}
+
+
 /*-----TOP Navbar start's----*/
 
 @import "Topnav";
@@ -34,3 +40,4 @@ body{
 /*-------Main navigation bar end's here------*/
 
 @import "CodeBanner";
+

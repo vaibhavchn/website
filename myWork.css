@@ -9,6 +9,10 @@
 body {
   font: normal 1.2em SourceSansProRegular,Arial,sans-serif; }
 
+.active {
+  opacity: 1;
+  color: #e6e8ea; }
+
 /*-----TOP Navbar start's----*/
 .Top-nav {
   background: #1e2933;
@@ -896,6 +900,12 @@ body {
           .code .code__event .ol__btn .ol__li a:hover {
             opacity: 1;
             color: #e6e8ea; }
+          .code .code__event .ol__btn .ol__li a:focus {
+            opacity: 1;
+            color: #e6e8ea; }
+        .code .code__event .ol__btn .ol__li .active {
+          opacity: 1;
+          color: #e6e8ea; }
     .code .code__event a.launch {
       text-decoration: none;
       position: absolute;

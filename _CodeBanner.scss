@@ -383,6 +383,16 @@
                         opacity: 1;
                         color: #e6e8ea;
                     }
+
+                    &:focus{
+                        opacity: 1;
+                        color: #e6e8ea;
+                    }
+                }
+
+                .active{
+                    opacity: 1;
+                    color: #e6e8ea;
                 }
             }
         }
