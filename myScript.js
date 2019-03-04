@@ -1,60 +1,25 @@
-function changeCode(click_id){
+const nav = document.querySelector('.ol__btn');
+const navbtn = Array.from(nav.children);
+const code = document.querySelector('.code__event__ul');
+const codeli = Array.from(code.children);
 
-    if (click_id === "1"){
-        document.getElementById("code__event__ul__li__1").style.display = "inline";
-        document.getElementById("code__event__ul__li__2").style.display = "none";
-        document.getElementById("code__event__ul__li__3").style.display = "none";
-        document.getElementById("code__event__ul__li__4").style.display = "none";
-        document.getElementById("code__event__ul__li__5").style.display = "none";
+const reset = (li) => {
+    li.style.opacity = '0';
+    li.style.visibility = 'hidden';
+};
 
-    }
-    else if (click_id === "2"){
-        document.getElementById("code__event__ul__li__1").style.display = "none";
-        document.getElementById("code__event__ul__li__2").style.display = "inline";
-        document.getElementById("code__event__ul__li__3").style.display = "none";
-        document.getElementById("code__event__ul__li__4").style.display = "none";
-        document.getElementById("code__event__ul__li__5").style.display = "none";
-    }
-    else if (click_id === "3"){
-        document.getElementById("code__event__ul__li__1").style.display = "none";
-        document.getElementById("code__event__ul__li__2").style.display = "none";
-        document.getElementById("code__event__ul__li__3").style.display = "inline";
-        document.getElementById("code__event__ul__li__4").style.display = "none";
-        document.getElementById("code__event__ul__li__5").style.display = "none";
-    }
-    else if (click_id === "4"){
-        document.getElementById("code__event__ul__li__1").style.display = "none";
-        document.getElementById("code__event__ul__li__2").style.display = "none";
-        document.getElementById("code__event__ul__li__3").style.display = "none";
-        document.getElementById("code__event__ul__li__4").style.display = "inline";
-        document.getElementById("code__event__ul__li__5").style.display = "none";
-    }
-    else{
-        document.getElementById("code__event__ul__li__1").style.display = "none";
-        document.getElementById("code__event__ul__li__2").style.display = "none";
-        document.getElementById("code__event__ul__li__3").style.display = "none";
-        document.getElementById("code__event__ul__li__4").style.display = "none";
-        document.getElementById("code__event__ul__li__5").style.display = "inline";
-    }
+nav.addEventListener('click', e => {
+    const target = e.target.closest('.ol__li');
+    if (!target) return;
+    const target_a = Array.from(target.children);
+    const active_a = nav.querySelector('.active');
+    const targetIndex = navbtn.findIndex(navbtn => navbtn === target);
+    codeli.forEach(reset);
+    codeli[targetIndex].style.opacity = '1';
+    codeli[targetIndex].style.visibility = 'visible';
+    target_a[0].classList.add('active');
+    active_a.classList.remove('active');
 
-}
+});
 
 
-function sampleFunction() {
- document.getElementById("code__event__ul__li__1").style.display = "inline";
-}
-window.onload=sampleFunction;
-
-
-
-/*
-let header = document.getElementsByClassName("ol__btn");
-let header1 = document.getElementsByClassName("ol__li");
-let btns = header1.getElementsByClassName("y");
-for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-      let current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
-}*/
